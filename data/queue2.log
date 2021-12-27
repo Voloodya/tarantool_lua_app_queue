@@ -1,0 +1,21 @@
+2021-12-27 12:28:05.318 [164147] main/103/queue2 C> Tarantool 2.8.2-0-gfc96d10f5
+2021-12-27 12:28:05.320 [164147] main/103/queue2 C> log level 5
+2021-12-27 12:28:05.320 [164147] main/103/queue2 I> wal/engine cleanup is paused
+2021-12-27 12:28:05.320 [164147] main/103/queue2 I> mapping 268435456 bytes for memtx tuple arena...
+2021-12-27 12:28:05.321 [164147] main/103/queue2 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2021-12-27 12:28:05.321 [164147] main/103/queue2 I> mapping 134217728 bytes for vinyl tuple arena...
+2021-12-27 12:28:05.337 [164147] main/103/queue2 I> instance uuid 0600d937-b557-46e5-85bc-ff6da2336fdc
+2021-12-27 12:28:05.338 [164147] main/103/queue2 I> tx_binary: stopped
+2021-12-27 12:28:05.338 [164147] main/103/queue2 I> initializing an empty data directory
+2021-12-27 12:28:05.359 [164147] main/103/queue2 I> assigned id 1 to replica 0600d937-b557-46e5-85bc-ff6da2336fdc
+2021-12-27 12:28:05.360 [164147] main/103/queue2 I> cluster uuid f6eada2b-a6fd-492f-99b7-d727285d4af2
+2021-12-27 12:28:05.379 [164147] snapshot/101/main I> saving snapshot `data/queue2/00000000000000000000.snap.inprogress'
+2021-12-27 12:28:05.386 [164147] snapshot/101/main I> done
+2021-12-27 12:28:05.390 [164147] main/103/queue2 I> ready to accept requests
+2021-12-27 12:28:05.390 [164147] main/105/gc I> wal/engine cleanup is resumed
+2021-12-27 12:28:05.390 [164147] main/103/queue2 I> set 'log_level' configuration option to 5
+2021-12-27 12:28:05.391 [164147] main/106/checkpoint_daemon I> scheduled next checkpoint for Mon Dec 27 13:44:53 2021
+2021-12-27 12:28:05.391 [164147] main/103/queue2 I> set 'log_format' configuration option to "plain"
+2021-12-27 12:28:05.391 [164147] main C> entering the event loop
+2021-12-27 12:35:01.362 [164147] main C> got signal 15 - Terminated
+2021-12-27 12:35:01.362 [164147] main I> tx_binary: stopped

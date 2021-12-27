@@ -1,0 +1,33 @@
+.tarantoolctl - файл настроек:
+
+local workdir = './data/' - раб. директория
+
+default_cfg - настройка директорий для:
+
+pid_file   - ,
+wal_dir    - ,
+memtx_dir  - ,
+vinyl_dir  - ,
+log        - ,
+
+
+instance_dir = "." - директория, где искать инстанс (точка входа)
+
+tarantoolctl start app.lua
+
+# Starting instance app...
+# Run console at unix/:./data/app.control
+# started
+
+ps auxw | grep tarantool
+# centos   30603  4.0  2.0 736068 41376 ?        Ssl  17:23   0:00 tarantool app.lua <running>
+
+Подключение к запущенному приложению
+
+1) По имени
+tarantoolctl enter app
+2) Через unix socket
+tarantoolctl connect unix/:./data/app.control
+
+Останов приложения
+tarantoolctl stop app.lua
