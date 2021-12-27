@@ -143,3 +143,4 @@
 2021-12-27 14:44:26.213 [165869] main/123/lua utils.c:449 E> LuajitError: /home/centos/work/myapp/queue/init.lua:39: attempt to index field 'status' (a nil value)
 2021-12-27 14:52:37.785 [165869] main/125/lua utils.c:449 E> LuajitError: /home/centos/work/myapp/queue/init.lua:39: attempt to index field 'status' (a nil value)
 2021-12-27 15:03:03.005 [165869] main/127/lua utils.c:449 E> LuajitError: /home/centos/work/myapp/queue/init.lua:39: attempt to index field 'status' (a nil value)
+2021-12-27 15:27:24.600 [165869] main/129/lua utils.c:449 E> LuajitError: /home/centos/work/myapp/queue/init.lua:39: attempt to index field 'status' (a nil value)

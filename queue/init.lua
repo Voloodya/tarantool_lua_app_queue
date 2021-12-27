@@ -2,9 +2,11 @@
 
 -- Схема
 
---
+-- Подключение модуля
 local uuid = require('uuid')
 
+-- Подключение модуля
+local fiber = require('fiber')
 
 box.schema.create_space('queue',{ if_not_exists = true; })
 
@@ -23,6 +25,9 @@ box.space.queue:create_index('primary', {
 -- Таблица
 local queue = {}
 
+-- Добавление канала
+queue._wait = fiber.channel()
+
 -- Рабочие функции ---------
 ----------------------------
 
@@ -34,13 +39,24 @@ STATUS.TAKEN = 'T'
 -- Реализуем put и сгенерируем id для задачи
 function queue.put(...)
     local id = uuid():str()
-    return box.space.queue:insert{ id, STATUS.READY, { ... } }
+    queue._wait:put(true,0)
+    return box.space.queue:insert{ id, STATUS.READY, ... }
 end
 
 function queue.take(...)
-    local t = box.space.queue.index.status:pairs({STATUS.READY}):nth(1)
-    if t then
-        return box.space.queue:update({ t.id }, {{ '=', 'status', STATUS.TAKEN }})
+    timeout = timeout or 0
+    -- Когда должно завершиться
+    local deadline = fiber.time()+timeout
+    local task
+    repeat
+        -- Пытаемся забрать task
+        task = box.space.queue.index.status:pairs({STATUS.READY}):nth(1)
+        if task then break end
+        -- Пытаемся взять из канала
+        queue._wait:get(deadline-fiber.time())
+    until fiber.time() >= deadline
+    if task then
+        return box.space.queue:update({task.id}, {{'=', 'status', STATUS.TAKEN}})
     end
     return
 end
@@ -60,6 +76,7 @@ function queue.release(id)
     if t.status ~= STATUS.TAKEN then
         error("Task not taken")
     end
+    queue._wait:put(true,0)
     return box.space.queue:update({t.id},{{'=', 'status', STATUS.READY }})
 end
 
