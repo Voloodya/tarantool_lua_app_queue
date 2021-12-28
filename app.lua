@@ -21,14 +21,14 @@ if not symlink then error("Please run by symlink",0) end
 -- Получение имени инстанса
 local instance_name = fio.basename(source):gsub('%.lua$','')
 
-local data_dir = 'data/'..instance_name
+local data_dir = 'data/'..instance_name -- директория, которая будет по умолчанию хранить все служебные файлы Tarantool
 
 -- Конфигурирование инстанса
 local config = {
-    pid_file   = data_dir..".pid",
-    wal_dir    = data_dir,
-    memtx_dir  = data_dir,
-    vinyl_dir  = data_dir,
+    pid_file   = data_dir..".pid", -- директори, где будет храниться файл с информацией с каким индификатром процесса tarantool был запущен
+    wal_dir    = data_dir,         -- директори, где будут храниться файлы .xlog
+    memtx_dir  = data_dir,         -- директори, где будут храниться файлы .snap
+    vinyl_dir  = data_dir,         -- если используется движок vinyl (хранение данных на диске) указывается, где все данные хранить
     -- log        = data_dir..".log",
 }
 
