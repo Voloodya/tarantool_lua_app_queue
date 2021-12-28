@@ -144,3 +144,7 @@
 2021-12-27 14:52:37.785 [165869] main/125/lua utils.c:449 E> LuajitError: /home/centos/work/myapp/queue/init.lua:39: attempt to index field 'status' (a nil value)
 2021-12-27 15:03:03.005 [165869] main/127/lua utils.c:449 E> LuajitError: /home/centos/work/myapp/queue/init.lua:39: attempt to index field 'status' (a nil value)
 2021-12-27 15:27:24.600 [165869] main/129/lua utils.c:449 E> LuajitError: /home/centos/work/myapp/queue/init.lua:39: attempt to index field 'status' (a nil value)
+2021-12-27 15:58:36.699 [165869] snapshot/101/main I> saving snapshot `data/queue1/00000000000000000013.snap.inprogress'
+2021-12-27 15:58:36.708 [165869] snapshot/101/main I> done
+2021-12-27 15:58:36.709 [165869] main/106/checkpoint_daemon I> scheduled next checkpoint for Mon Dec 27 16:58:36 2021
+2021-12-27 16:58:36.693 [165869] main/106/checkpoint_daemon I> scheduled next checkpoint for Mon Dec 27 17:58:36 2021
