@@ -148,3 +148,203 @@
 2021-12-27 15:58:36.708 [165869] snapshot/101/main I> done
 2021-12-27 15:58:36.709 [165869] main/106/checkpoint_daemon I> scheduled next checkpoint for Mon Dec 27 16:58:36 2021
 2021-12-27 16:58:36.693 [165869] main/106/checkpoint_daemon I> scheduled next checkpoint for Mon Dec 27 17:58:36 2021
+2021-12-28 09:44:04.150 [169602] main/103/queue1 C> Tarantool 2.8.2-0-gfc96d10f5
+2021-12-28 09:44:04.151 [169602] main/103/queue1 C> log level 5
+2021-12-28 09:44:04.151 [169602] main/103/queue1 I> wal/engine cleanup is paused
+2021-12-28 09:44:04.160 [169602] main/103/queue1 I> mapping 268435456 bytes for memtx tuple arena...
+2021-12-28 09:44:04.163 [169602] main/103/queue1 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2021-12-28 09:44:04.163 [169602] main/103/queue1 I> mapping 134217728 bytes for vinyl tuple arena...
+2021-12-28 09:44:04.164 [169602] main/103/queue1 I> Recovering snapshot with schema version 2.7.1
+2021-12-28 09:44:04.179 [169602] main/103/queue1 I> instance uuid e44abf9e-dbf6-4154-92a5-84dd2bff7da7
+2021-12-28 09:44:04.180 [169602] main/103/queue1 I> instance vclock {1: 13}
+2021-12-28 09:44:04.180 [169602] main/103/queue1 I> tx_binary: stopped
+2021-12-28 09:44:04.181 [169602] main/103/queue1 I> tx_binary: bound to 127.0.0.1:3301
+2021-12-28 09:44:04.184 [169602] main/103/queue1 I> recovery start
+2021-12-28 09:44:04.184 [169602] main/103/queue1 I> recovering from `data/queue1/00000000000000000013.snap'
+2021-12-28 09:44:04.195 [169602] main/103/queue1 I> cluster uuid d2c5c34d-2bb0-4cd0-88bd-27308c6224d9
+2021-12-28 09:44:04.205 [169602] main/103/queue1 I> assigned id 1 to replica e44abf9e-dbf6-4154-92a5-84dd2bff7da7
+2021-12-28 09:44:04.206 [169602] main/103/queue1 I> recover from `data/queue1/00000000000000000010.xlog'
+2021-12-28 09:44:04.208 [169602] main/103/queue1 I> done `data/queue1/00000000000000000010.xlog'
+2021-12-28 09:44:04.210 [169602] main/103/queue1 I> ready to accept requests
+2021-12-28 09:44:04.210 [169602] main/103/queue1 C> leaving orphan mode
+2021-12-28 09:44:04.210 [169602] main/105/gc I> wal/engine cleanup is resumed
+2021-12-28 09:44:04.210 [169602] main/103/queue1 I> set 'log_level' configuration option to 5
+2021-12-28 09:44:04.210 [169602] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Dec 28 10:52:53 2021
+2021-12-28 09:44:04.210 [169602] main/103/queue1 I> set 'listen' configuration option to "127.0.0.1:3301"
+2021-12-28 09:44:04.210 [169602] main/103/queue1 I> set 'log_format' configuration option to "plain"
+2021-12-28 09:44:04.214 [169602] main/103/queue1 tarantoolctl:566 E> Start failed: /home/centos/work/myapp/queue/init.lua:96: attempt to index field 'status' (a nil value)
+2021-12-28 09:44:04.206 [169602] main/103/queue1 I> recover from `data/queue1/00000000000000000010.xlog'
+2021-12-28 09:44:04.208 [169602] main/103/queue1 I> done `data/queue1/00000000000000000010.xlog'
+2021-12-28 09:44:04.210 [169602] main/103/queue1 I> ready to accept requests
+2021-12-28 09:44:04.210 [169602] main/103/queue1 C> leaving orphan mode
+2021-12-28 09:44:04.210 [169602] main/105/gc I> wal/engine cleanup is resumed
+2021-12-28 09:44:04.210 [169602] main/103/queue1 I> set 'log_level' configuration option to 5
+2021-12-28 09:44:04.210 [169602] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Dec 28 10:52:53 2021
+2021-12-28 09:44:04.210 [169602] main/103/queue1 I> set 'listen' configuration option to "127.0.0.1:3301"
+2021-12-28 09:44:04.210 [169602] main/103/queue1 I> set 'log_format' configuration option to "plain"
+2021-12-28 09:44:04.214 [169602] main/103/queue1 tarantoolctl:566 E> Start failed: /home/centos/work/myapp/queue/init.lua:96: attempt to index field 'status' (a nil value)
+2021-12-28 09:44:04.222 [169602] main I> tx_binary: stopped
+2021-12-28 09:47:32.002 [169630] main/103/queue1 C> Tarantool 2.8.2-0-gfc96d10f5
+2021-12-28 09:47:32.003 [169630] main/103/queue1 C> log level 5
+2021-12-28 09:47:32.003 [169630] main/103/queue1 I> wal/engine cleanup is paused
+2021-12-28 09:47:32.010 [169630] main/103/queue1 I> mapping 268435456 bytes for memtx tuple arena...
+2021-12-28 09:47:32.012 [169630] main/103/queue1 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2021-12-28 09:47:32.014 [169630] main/103/queue1 I> mapping 134217728 bytes for vinyl tuple arena...
+2021-12-28 09:47:32.019 [169630] main/103/queue1 I> Recovering snapshot with schema version 2.7.1
+2021-12-28 09:47:32.031 [169630] main/103/queue1 I> instance uuid e44abf9e-dbf6-4154-92a5-84dd2bff7da7
+2021-12-28 09:47:32.031 [169630] main/103/queue1 I> instance vclock {1: 14}
+2021-12-28 09:47:32.032 [169630] main/103/queue1 I> tx_binary: stopped
+2021-12-28 09:47:32.033 [169630] main/103/queue1 I> tx_binary: bound to 127.0.0.1:3301
+2021-12-28 09:47:32.036 [169630] main/103/queue1 I> recovery start
+2021-12-28 09:47:32.036 [169630] main/103/queue1 I> recovering from `data/queue1/00000000000000000013.snap'
+2021-12-28 09:47:32.048 [169630] main/103/queue1 I> cluster uuid d2c5c34d-2bb0-4cd0-88bd-27308c6224d9
+2021-12-28 09:47:32.058 [169630] main/103/queue1 I> assigned id 1 to replica e44abf9e-dbf6-4154-92a5-84dd2bff7da7
+2021-12-28 09:47:32.059 [169630] main/103/queue1 I> recover from `data/queue1/00000000000000000013.xlog'
+2021-12-28 09:47:32.059 [169630] main/103/queue1 I> done `data/queue1/00000000000000000013.xlog'
+2021-12-28 09:47:32.060 [169630] main/103/queue1 I> recover from `data/queue1/00000000000000000014.xlog'
+2021-12-28 09:47:32.061 [169630] main/103/queue1 I> done `data/queue1/00000000000000000014.xlog'
+2021-12-28 09:47:32.063 [169630] main/103/queue1 I> ready to accept requests
+2021-12-28 09:47:32.063 [169630] main/103/queue1 C> leaving orphan mode
+2021-12-28 09:47:32.063 [169630] main/105/gc I> wal/engine cleanup is resumed
+2021-12-28 09:47:32.063 [169630] main/103/queue1 I> set 'log_level' configuration option to 5
+2021-12-28 09:47:32.063 [169630] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Dec 28 11:03:21 2021
+2021-12-28 09:47:32.063 [169630] main/103/queue1 I> set 'listen' configuration option to "127.0.0.1:3301"
+2021-12-28 09:47:32.064 [169630] main/103/queue1 I> set 'log_format' configuration option to "plain"
+2021-12-28 09:47:32.066 [169630] main/103/queue1 tarantoolctl:566 E> Start failed: /home/centos/work/myapp/queue/init.lua:96: attempt to index field 'status' (a nil value)
+2021-12-28 09:47:32.060 [169630] main/103/queue1 I> recover from `data/queue1/00000000000000000014.xlog'
+2021-12-28 09:47:32.061 [169630] main/103/queue1 I> done `data/queue1/00000000000000000014.xlog'
+2021-12-28 09:47:32.063 [169630] main/103/queue1 I> ready to accept requests
+2021-12-28 09:47:32.063 [169630] main/103/queue1 C> leaving orphan mode
+2021-12-28 09:47:32.063 [169630] main/105/gc I> wal/engine cleanup is resumed
+2021-12-28 09:47:32.063 [169630] main/103/queue1 I> set 'log_level' configuration option to 5
+2021-12-28 09:47:32.063 [169630] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Dec 28 11:03:21 2021
+2021-12-28 09:47:32.063 [169630] main/103/queue1 I> set 'listen' configuration option to "127.0.0.1:3301"
+2021-12-28 09:47:32.064 [169630] main/103/queue1 I> set 'log_format' configuration option to "plain"
+2021-12-28 09:47:32.066 [169630] main/103/queue1 tarantoolctl:566 E> Start failed: /home/centos/work/myapp/queue/init.lua:96: attempt to index field 'status' (a nil value)
+2021-12-28 09:47:32.072 [169630] main I> tx_binary: stopped
+2021-12-28 09:51:28.784 [169675] main/103/queue1 C> Tarantool 2.8.2-0-gfc96d10f5
+2021-12-28 09:51:28.784 [169675] main/103/queue1 C> log level 5
+2021-12-28 09:51:28.785 [169675] main/103/queue1 I> wal/engine cleanup is paused
+2021-12-28 09:51:28.788 [169675] main/103/queue1 I> mapping 268435456 bytes for memtx tuple arena...
+2021-12-28 09:51:28.790 [169675] main/103/queue1 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2021-12-28 09:51:28.791 [169675] main/103/queue1 I> mapping 134217728 bytes for vinyl tuple arena...
+2021-12-28 09:51:28.791 [169675] main/103/queue1 I> Recovering snapshot with schema version 2.7.1
+2021-12-28 09:51:28.809 [169675] main/103/queue1 I> instance uuid e44abf9e-dbf6-4154-92a5-84dd2bff7da7
+2021-12-28 09:51:28.810 [169675] main/103/queue1 I> instance vclock {1: 15}
+2021-12-28 09:51:28.811 [169675] main/103/queue1 I> tx_binary: stopped
+2021-12-28 09:51:28.811 [169675] main/103/queue1 I> tx_binary: bound to 127.0.0.1:3301
+2021-12-28 09:51:28.815 [169675] main/103/queue1 I> recovery start
+2021-12-28 09:51:28.815 [169675] main/103/queue1 I> recovering from `data/queue1/00000000000000000013.snap'
+2021-12-28 09:51:28.827 [169675] main/103/queue1 I> cluster uuid d2c5c34d-2bb0-4cd0-88bd-27308c6224d9
+2021-12-28 09:51:28.840 [169675] main/103/queue1 I> assigned id 1 to replica e44abf9e-dbf6-4154-92a5-84dd2bff7da7
+2021-12-28 09:51:28.841 [169675] main/103/queue1 I> recover from `data/queue1/00000000000000000013.xlog'
+2021-12-28 09:51:28.842 [169675] main/103/queue1 I> done `data/queue1/00000000000000000013.xlog'
+2021-12-28 09:51:28.843 [169675] main/103/queue1 I> recover from `data/queue1/00000000000000000014.xlog'
+2021-12-28 09:51:28.844 [169675] main/103/queue1 I> done `data/queue1/00000000000000000014.xlog'
+2021-12-28 09:51:28.844 [169675] main/103/queue1 I> recover from `data/queue1/00000000000000000015.xlog'
+2021-12-28 09:51:28.844 [169675] main/103/queue1 I> done `data/queue1/00000000000000000015.xlog'
+2021-12-28 09:51:28.845 [169675] main/103/queue1 I> ready to accept requests
+2021-12-28 09:51:28.845 [169675] main/103/queue1 C> leaving orphan mode
+2021-12-28 09:51:28.845 [169675] main/105/gc I> wal/engine cleanup is resumed
+2021-12-28 09:51:28.845 [169675] main/103/queue1 I> set 'log_level' configuration option to 5
+2021-12-28 09:51:28.845 [169675] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Dec 28 11:10:41 2021
+2021-12-28 09:51:28.846 [169675] main/103/queue1 I> set 'listen' configuration option to "127.0.0.1:3301"
+2021-12-28 09:51:28.846 [169675] main/103/queue1 I> set 'log_format' configuration option to "plain"
+2021-12-28 09:51:28.848 [169675] main/103/queue1 tarantoolctl:566 E> Start failed: /home/centos/work/myapp/queue/init.lua:96: attempt to index field 'status' (a nil value)
+2021-12-28 09:51:28.844 [169675] main/103/queue1 I> recover from `data/queue1/00000000000000000015.xlog'
+2021-12-28 09:51:28.844 [169675] main/103/queue1 I> done `data/queue1/00000000000000000015.xlog'
+2021-12-28 09:51:28.845 [169675] main/103/queue1 I> ready to accept requests
+2021-12-28 09:51:28.845 [169675] main/103/queue1 C> leaving orphan mode
+2021-12-28 09:51:28.845 [169675] main/105/gc I> wal/engine cleanup is resumed
+2021-12-28 09:51:28.845 [169675] main/103/queue1 I> set 'log_level' configuration option to 5
+2021-12-28 09:51:28.845 [169675] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Dec 28 11:10:41 2021
+2021-12-28 09:51:28.846 [169675] main/103/queue1 I> set 'listen' configuration option to "127.0.0.1:3301"
+2021-12-28 09:51:28.846 [169675] main/103/queue1 I> set 'log_format' configuration option to "plain"
+2021-12-28 09:51:28.848 [169675] main/103/queue1 tarantoolctl:566 E> Start failed: /home/centos/work/myapp/queue/init.lua:96: attempt to index field 'status' (a nil value)
+2021-12-28 09:51:28.854 [169675] main I> tx_binary: stopped
+2021-12-28 09:54:22.072 [169718] main/103/queue1 C> Tarantool 2.8.2-0-gfc96d10f5
+2021-12-28 09:54:22.073 [169718] main/103/queue1 C> log level 5
+2021-12-28 09:54:22.079 [169718] main/103/queue1 I> wal/engine cleanup is paused
+2021-12-28 09:54:22.091 [169718] main/103/queue1 I> mapping 268435456 bytes for memtx tuple arena...
+2021-12-28 09:54:22.092 [169718] main/103/queue1 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2021-12-28 09:54:22.092 [169718] main/103/queue1 I> mapping 134217728 bytes for vinyl tuple arena...
+2021-12-28 09:54:22.093 [169718] main/103/queue1 I> Recovering snapshot with schema version 2.7.1
+2021-12-28 09:54:22.099 [169718] main/103/queue1 I> instance uuid e44abf9e-dbf6-4154-92a5-84dd2bff7da7
+2021-12-28 09:54:22.100 [169718] main/103/queue1 I> instance vclock {1: 16}
+2021-12-28 09:54:22.100 [169718] main/103/queue1 I> tx_binary: stopped
+2021-12-28 09:54:22.100 [169718] main/103/queue1 I> tx_binary: bound to 127.0.0.1:3301
+2021-12-28 09:54:22.110 [169718] main/103/queue1 I> recovery start
+2021-12-28 09:54:22.110 [169718] main/103/queue1 I> recovering from `data/queue1/00000000000000000013.snap'
+2021-12-28 09:54:22.119 [169718] main/103/queue1 I> cluster uuid d2c5c34d-2bb0-4cd0-88bd-27308c6224d9
+2021-12-28 09:54:22.128 [169718] main/103/queue1 I> assigned id 1 to replica e44abf9e-dbf6-4154-92a5-84dd2bff7da7
+2021-12-28 09:54:22.131 [169718] main/103/queue1 I> recover from `data/queue1/00000000000000000013.xlog'
+2021-12-28 09:54:22.132 [169718] main/103/queue1 I> done `data/queue1/00000000000000000013.xlog'
+2021-12-28 09:54:22.133 [169718] main/103/queue1 I> recover from `data/queue1/00000000000000000014.xlog'
+2021-12-28 09:54:22.133 [169718] main/103/queue1 I> done `data/queue1/00000000000000000014.xlog'
+2021-12-28 09:54:22.133 [169718] main/103/queue1 I> recover from `data/queue1/00000000000000000015.xlog'
+2021-12-28 09:54:22.133 [169718] main/103/queue1 I> done `data/queue1/00000000000000000015.xlog'
+2021-12-28 09:54:22.134 [169718] main/103/queue1 I> recover from `data/queue1/00000000000000000016.xlog'
+2021-12-28 09:54:22.134 [169718] main/103/queue1 I> done `data/queue1/00000000000000000016.xlog'
+2021-12-28 09:54:22.135 [169718] main/103/queue1 I> ready to accept requests
+2021-12-28 09:54:22.135 [169718] main/103/queue1 C> leaving orphan mode
+2021-12-28 09:54:22.135 [169718] main/105/gc I> wal/engine cleanup is resumed
+2021-12-28 09:54:22.136 [169718] main/103/queue1 I> set 'log_level' configuration option to 5
+2021-12-28 09:54:22.136 [169718] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Dec 28 10:59:45 2021
+2021-12-28 09:54:22.136 [169718] main/103/queue1 I> set 'listen' configuration option to "127.0.0.1:3301"
+2021-12-28 09:54:22.136 [169718] main/103/queue1 I> set 'log_format' configuration option to "plain"
+2021-12-28 09:54:22.138 [169718] main/103/queue1 tarantoolctl:566 E> Start failed: /home/centos/work/myapp/queue/init.lua:96: attempt to index field 'status' (a nil value)
+2021-12-28 09:54:22.134 [169718] main/103/queue1 I> recover from `data/queue1/00000000000000000016.xlog'
+2021-12-28 09:54:22.134 [169718] main/103/queue1 I> done `data/queue1/00000000000000000016.xlog'
+2021-12-28 09:54:22.135 [169718] main/103/queue1 I> ready to accept requests
+2021-12-28 09:54:22.135 [169718] main/103/queue1 C> leaving orphan mode
+2021-12-28 09:54:22.135 [169718] main/105/gc I> wal/engine cleanup is resumed
+2021-12-28 09:54:22.136 [169718] main/103/queue1 I> set 'log_level' configuration option to 5
+2021-12-28 09:54:22.136 [169718] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Dec 28 10:59:45 2021
+2021-12-28 09:54:22.136 [169718] main/103/queue1 I> set 'listen' configuration option to "127.0.0.1:3301"
+2021-12-28 09:54:22.136 [169718] main/103/queue1 I> set 'log_format' configuration option to "plain"
+2021-12-28 09:54:22.138 [169718] main/103/queue1 tarantoolctl:566 E> Start failed: /home/centos/work/myapp/queue/init.lua:96: attempt to index field 'status' (a nil value)
+2021-12-28 09:54:22.145 [169718] main I> tx_binary: stopped
+2021-12-28 10:14:05.357 [169868] main/103/queue1 C> Tarantool 2.8.2-0-gfc96d10f5
+2021-12-28 10:14:05.359 [169868] main/103/queue1 C> log level 5
+2021-12-28 10:14:05.360 [169868] main/103/queue1 I> wal/engine cleanup is paused
+2021-12-28 10:14:05.365 [169868] main/103/queue1 I> mapping 268435456 bytes for memtx tuple arena...
+2021-12-28 10:14:05.365 [169868] main/103/queue1 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2021-12-28 10:14:05.365 [169868] main/103/queue1 I> mapping 134217728 bytes for vinyl tuple arena...
+2021-12-28 10:14:05.370 [169868] main/103/queue1 I> Recovering snapshot with schema version 2.7.1
+2021-12-28 10:14:05.379 [169868] main/103/queue1 I> instance uuid e44abf9e-dbf6-4154-92a5-84dd2bff7da7
+2021-12-28 10:14:05.380 [169868] main/103/queue1 I> instance vclock {1: 17}
+2021-12-28 10:14:05.380 [169868] main/103/queue1 I> tx_binary: stopped
+2021-12-28 10:14:05.380 [169868] main/103/queue1 I> tx_binary: bound to 127.0.0.1:3301
+2021-12-28 10:14:05.382 [169868] main/103/queue1 I> recovery start
+2021-12-28 10:14:05.382 [169868] main/103/queue1 I> recovering from `data/queue1/00000000000000000013.snap'
+2021-12-28 10:14:05.392 [169868] main/103/queue1 I> cluster uuid d2c5c34d-2bb0-4cd0-88bd-27308c6224d9
+2021-12-28 10:14:05.402 [169868] main/103/queue1 I> assigned id 1 to replica e44abf9e-dbf6-4154-92a5-84dd2bff7da7
+2021-12-28 10:14:05.403 [169868] main/103/queue1 I> recover from `data/queue1/00000000000000000013.xlog'
+2021-12-28 10:14:05.403 [169868] main/103/queue1 I> done `data/queue1/00000000000000000013.xlog'
+2021-12-28 10:14:05.404 [169868] main/103/queue1 I> recover from `data/queue1/00000000000000000014.xlog'
+2021-12-28 10:14:05.407 [169868] main/103/queue1 I> done `data/queue1/00000000000000000014.xlog'
+2021-12-28 10:14:05.407 [169868] main/103/queue1 I> recover from `data/queue1/00000000000000000015.xlog'
+2021-12-28 10:14:05.407 [169868] main/103/queue1 I> done `data/queue1/00000000000000000015.xlog'
+2021-12-28 10:14:05.407 [169868] main/103/queue1 I> recover from `data/queue1/00000000000000000016.xlog'
+2021-12-28 10:14:05.408 [169868] main/103/queue1 I> done `data/queue1/00000000000000000016.xlog'
+2021-12-28 10:14:05.408 [169868] main/103/queue1 I> recover from `data/queue1/00000000000000000017.xlog'
+2021-12-28 10:14:05.409 [169868] main/103/queue1 I> done `data/queue1/00000000000000000017.xlog'
+2021-12-28 10:14:05.410 [169868] main/103/queue1 I> ready to accept requests
+2021-12-28 10:14:05.410 [169868] main/103/queue1 C> leaving orphan mode
+2021-12-28 10:14:05.411 [169868] main/105/gc I> wal/engine cleanup is resumed
+2021-12-28 10:14:05.412 [169868] main/103/queue1 I> set 'log_level' configuration option to 5
+2021-12-28 10:14:05.412 [169868] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Dec 28 11:39:02 2021
+2021-12-28 10:14:05.412 [169868] main/103/queue1 I> set 'listen' configuration option to "127.0.0.1:3301"
+2021-12-28 10:14:05.412 [169868] main/103/queue1 I> set 'log_format' configuration option to "plain"
+2021-12-28 10:14:05.416 [169868] main/103/queue1 tarantoolctl:566 E> Start failed: /home/centos/work/myapp/queue/init.lua:96: attempt to index field 'status' (a nil value)
+2021-12-28 10:14:05.408 [169868] main/103/queue1 I> recover from `data/queue1/00000000000000000017.xlog'
+2021-12-28 10:14:05.409 [169868] main/103/queue1 I> done `data/queue1/00000000000000000017.xlog'
+2021-12-28 10:14:05.410 [169868] main/103/queue1 I> ready to accept requests
+2021-12-28 10:14:05.410 [169868] main/103/queue1 C> leaving orphan mode
+2021-12-28 10:14:05.411 [169868] main/105/gc I> wal/engine cleanup is resumed
+2021-12-28 10:14:05.412 [169868] main/103/queue1 I> set 'log_level' configuration option to 5
+2021-12-28 10:14:05.412 [169868] main/106/checkpoint_daemon I> scheduled next checkpoint for Tue Dec 28 11:39:02 2021
+2021-12-28 10:14:05.412 [169868] main/103/queue1 I> set 'listen' configuration option to "127.0.0.1:3301"
+2021-12-28 10:14:05.412 [169868] main/103/queue1 I> set 'log_format' configuration option to "plain"
+2021-12-28 10:14:05.416 [169868] main/103/queue1 tarantoolctl:566 E> Start failed: /home/centos/work/myapp/queue/init.lua:96: attempt to index field 'status' (a nil value)
+2021-12-28 10:14:05.433 [169868] main I> tx_binary: stopped
