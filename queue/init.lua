@@ -24,19 +24,17 @@ box.space.queue:create_index('primary', {
 -- Таблица
 local queue = {}
 
--- Добавление канала
-queue._wait = fiber.channel()
-
--- Рабочие функции ---------
-----------------------------
-
 local STATUS = {}
 STATUS.READY = 'R'
 STATUS.TAKEN = 'T'
 
+-- Добавление канала
+queue._wait = fiber.channel()
+
 -- Таблицы для хранения “взятых” задач
 queue.taken = {} -- список взятых задач
 queue.bysid = {} -- список задач для конкретной сессии
+
 
 -- Автоматический возврат задач в очередь на обрыве соединения ------------
 -- Тригер on_connect
@@ -89,6 +87,7 @@ box.session.on_disconnect(function()
     -- Удаление всех tasks, которые были за данной очередью (сесию)
     queue.bysid[ sid ] = nil
 end)
+-----------------------------------------------------------------------------------------
 
 -- Возврат при старте (после определения space/index). Обход всех тасков
 while true do
@@ -102,8 +101,8 @@ while true do
     box.space.queue:update({t.id}, {{'=', 'status', STATUS.READY}})
     log.info("Autoreleased %s at start", t.id)
 end
-
 ---------------------------------------------------------------------------------
+
 -- Вставка в таблицу
 -- Реализуем put и сгенерируем id для задачи
 function queue.put(...)
